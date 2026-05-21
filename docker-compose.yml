@@ -1,6 +1,7 @@
 services:
   db:
-    image: postgis/postgis:16-3.4
+    image: postgis/postgis:17-3.5
+    platform: linux/amd64
     container_name: darkstore_postgres
     environment:
       POSTGRES_USER: ${DB_USER}
